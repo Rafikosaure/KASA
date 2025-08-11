@@ -1,0 +1,49 @@
+$color_1: white;
+$font-family_1: 'Montserrat';
+@mixin card-properties {
+    width: 335px;
+	height: 255px;
+    border-radius: 10px;
+}
+@mixin card-properties__desktop {
+    width: 340px;
+	height: 340px;
+    border-radius: 10px;
+}
+
+.card {
+    @include card-properties;
+    @media (min-width: 768px) {
+        @include card-properties__desktop;
+        margin-top: 15px;
+    }
+    .card__link {
+        text-decoration: none;
+        position: absolute;
+        .card__overlay {
+            position: absolute;
+            @include card-properties;
+            @media (min-width: 768px) {
+                @include card-properties__desktop;
+            }
+        }
+        .card__image {
+            @include card-properties;
+            object-fit: cover;
+            @media (min-width: 768px) {
+                @include card-properties__desktop;
+            }
+        }
+        .card__title {
+            position: relative;
+            font-family: $font-family_1;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            color: $color_1;
+            width: 250px;
+            bottom: 90px;
+            left: 18px;
+        }
+    }
+}

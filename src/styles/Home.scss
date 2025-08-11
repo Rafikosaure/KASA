@@ -1,0 +1,42 @@
+$background-color_1: white;
+
+.home {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: $background-color_1;
+    max-width: 100%;
+    .home__body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        .home__cardslist {
+            gap: 20px;
+            max-width: 86%;
+            min-width: 335px;
+            height: fit-content;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-left: 0;
+            padding-right: 0;
+            background-color: white;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            @media (min-width: 768px) {
+                background: #F7F7F7;
+                max-width: 82%;
+                margin-top: 45px;
+                margin-bottom: 50px;
+                padding-bottom: 45px;
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+        }
+    }
+}

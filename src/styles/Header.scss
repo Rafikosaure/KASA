@@ -1,0 +1,71 @@
+$color_1: #FF6060;
+$background-color_1: white;
+@mixin links-properties {
+    color: $color_1;
+    font-weight: 500;
+    text-align: right;
+}
+
+.header {
+    // max-width: 1440px;
+	background-color: $background-color_1;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    @media (min-width: 768px) {
+        height: auto;
+    }
+    .banner {
+        width: 86%;
+        min-width: 335px;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: $background-color_1;
+        @media (min-width: 768px) {
+            padding-top: 45px;
+            padding-bottom: 50px;
+            height: 68px;
+        }
+        .banner__logo {
+            height: 47px;
+            max-width: 145px;
+            @media (min-width: 768px) {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .banner__navigation {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 47px;
+            white-space: nowrap;
+            padding: 0px;
+            gap: 15px;
+            text-transform: uppercase;
+            font-size: 12px;
+            @media (min-width: 768px) {
+                text-transform: none;
+                white-space: normal;
+                font-size: 24px;
+                gap: 57px;
+                height: auto;
+            }
+            .banner__navlink {
+                @include links-properties;
+                text-decoration: none;
+            }
+            .banner__navlink--underline {
+                @include links-properties;
+                text-decoration: underline;
+            }
+        }
+    }
+}

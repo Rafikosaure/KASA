@@ -1,0 +1,154 @@
+$color_1: #FF6060;
+$background-color_1: white;
+
+.apartment {
+	// width: 1440px;
+    // width: 100%;
+    width: 100vw;
+    max-width: 1440px;
+	height: fit-content;
+	background-color: $background-color_1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+    .apartment__data {
+        height: fit-content;
+        width: 86%;
+        min-width: 335px;
+        padding-top: 30px;
+        padding-bottom: 35px;
+        .apartment__data--orientation {
+            display: flex;
+            flex-direction: column;
+            @media (min-width: 768px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                height: 100%;
+            }
+            .apartment__presentation {
+                margin-bottom: -14px;
+                @media (min-width: 768px) {
+                    margin-bottom: 0;
+                }
+            }
+            .apartment__title {
+                color: $color_1;
+                margin-top: 0;
+                font-size: 18px;
+                font-weight: 500;
+                @media (min-width: 768px) {
+                    font-size: 36px;
+                }
+            }
+            .apartment__location {
+                color: $color_1;
+                position: relative;
+                bottom: 14px;
+                font-size: 14px;
+                font-weight: 500;
+                @media (min-width: 768px) {
+                    font-size: 18px;
+                }
+            }
+            .apartment__tagnames {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                position: relative;
+                bottom: 14px;
+                flex-wrap: wrap;
+            }
+            .apartment__hostAndRating {
+                display: flex;
+                flex-direction: row-reverse;
+                width: 100%;
+                height: 40px;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 15px;
+                @media (min-width: 768px) {
+                    display: block;
+                    width: auto;
+                    margin-top: 8px;
+                }
+                .apartment__rating {
+                    width: fit-content;
+                    height: auto;
+                    margin-top: 0;
+                    @media (min-width: 768px) {
+                        margin-top: 13px;
+                    }
+                }
+                .apartment__host {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    @media (min-width: 768px) {
+                        margin-bottom: 6px;
+                        justify-content: flex-end;
+                        width: 200px;
+                        height: 64px;
+                    }
+                    .apartment__hostName {
+                        font-size: 12px;
+                        color: $color_1;
+                        width: 83px;
+                        height: fit-content;
+                        padding-right: 6%;
+                        display: flex;
+                        text-align: right;
+                        line-height: 142.6%;
+                        @media (min-width: 768px) {
+                            font-size: 18px;
+                            color: $color_1;
+                            width: 93px;
+                            height: fit-content;
+                            padding-right: 6%;
+                            display: flex;
+                            text-align: right;
+                            line-height: 142.6%;
+                        }
+                    }
+                    .apartment__hostPhoto {
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        @media (min-width: 768px) {
+                            width: 64px;
+                            height: 64px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        .apartment__collapseComponents {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: static;
+            @media (min-width: 768px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 50px;
+                position: relative;
+                bottom: 16px;
+                min-height: fit-content;
+            }
+            .apartment__collapse {
+                width: 100%;
+                height: fit-content;
+                @media (min-width: 768px) {
+                    width: 50%;
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+$background-color_1: white;
+
+.aboutus {
+    display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: $background-color_1;
+	width: 100%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+    .aboutus__landscape {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: $background-color_1;
+    }
+    .aboutus__collapses {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        background-color: $background-color_1;
+        margin-top: 0;
+        margin-bottom: 20px;
+        @media (min-width: 768px) {
+            margin-top: 5px;
+            margin-bottom: 35px;
+        }
+    }
+}

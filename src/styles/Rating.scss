@@ -1,0 +1,12 @@
+.stars {
+    display: flex;
+    gap: 4px;
+    width: 120px;
+    height: 24px;
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: flex-end;
+        width: 196px;
+        height: 36px;
+    }
+}

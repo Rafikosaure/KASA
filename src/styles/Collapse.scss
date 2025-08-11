@@ -1,0 +1,115 @@
+$color_1: #FF6060;
+$color_2: white;
+$font-family_1: 'Montserrat';
+$background-color_1: #F6F6F6;
+
+.collapse {
+    width: 86%;
+    min-width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: $background-color_1;
+    border-radius: 5px;
+    color: $color_1;
+    max-height: 30px;
+    @media (min-width: 768px) {
+        width: 70%;
+        max-height: 52px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    .collapse__bar {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-height: 30px;
+        background: $color_1;
+        border-radius: 5px;
+        @media (min-width: 768px) {
+            padding: 10px 20px 10px 15px;
+            height: 32px;
+            border-radius: 10px;
+        }
+        .collapse__button {
+            display: flex;
+            width: 24px;
+            height: 14px;
+            border: none;
+            cursor: pointer;
+            background: url(../assets/arrow_up.png);
+        }
+        .collapse__button--open {
+            transform: rotate(-180deg);
+            transition: transform 250ms ease-in-out;
+        }
+        .collapse__button--close {
+            transform: rotate(0deg);
+            transition: transform 250ms ease-in-out;
+        }
+        .collapse__title {
+            font-family: $font-family_1;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            color: $color_2;
+            @media (min-width: 768px) {
+                font-size: 24px;
+            }
+        }
+    }
+}
+.collapse--open {
+    transition: max-height ease-in-out 300ms;
+    max-height: 300px;
+    height: fit-content;
+    overflow: clip;
+    @media (min-width: 768px) {
+        max-height: 400px;
+    }
+}
+.collapse--close {
+    transition: max-height ease-in-out 300ms;
+    overflow: hidden;
+    max-height: 30px;
+    @media (min-width: 768px) {
+        max-height: 52px;
+    }
+}
+.collapse--apartPage {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+.collapse__bar--apartPage {
+    border-radius: 10px;
+}
+.collapse__description {
+    border-radius: 5px;
+    width: 95%;
+    max-height: 100%;
+    margin: auto;
+    padding-left: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: $font-family_1;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: lighter;
+    @media (min-width: 768px) {
+        border-radius: 10px;
+        font-size: 18px;
+    }
+}
+.collapse__description--apartPage {
+    border-radius: 10px;
+    width: 95%;
+    list-style-type: none;
+}

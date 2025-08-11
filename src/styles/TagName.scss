@@ -1,0 +1,23 @@
+$color_1: white;
+
+.tagname {
+	width: 107px;
+	height: 18px;
+	border-radius: 5px;
+	background: #FF6060;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@media (min-width: 768px) {
+		border-radius: 10px;
+		width: 125px;
+		height: 25px;
+	}
+    .tagname__text {
+        font-size: 10px;
+        color: $color_1;
+		@media (min-width: 768px) {
+			font-size: 12px;
+		}
+    }
+}
