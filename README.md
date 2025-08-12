@@ -2,7 +2,7 @@
 
 KASA est une application web développée en **React** et **SASS**, dans le cadre d'un projet de formation chez OpenClassrooms. Il s'agit d'une refonte complète du site de KASA, leader en location immobilière pour particuliers en France.  
 
-🚀 **Déployé sur Vercel** : [Accéder à l'application](https://KASA-blue.vercel.app/)  
+🚀 **Déployé sur Vercel** : [Accéder à l'application](https://kasa-immobilier.com/)  
 
 ## 🛠️ Technologies utilisées  
 
@@ -39,7 +39,7 @@ KASA est une application web développée en **React** et **SASS**, dans le cadr
 git clone https://github.com/Rafikosaure/KASA.git
 
 # 2. Se rendre dans le dossier du projet
-cd KASA
+cd "KASA v2"
 
 # 3. Installer les dépendances
 npm install
@@ -56,7 +56,7 @@ Aucun test Jest ou Cypress n'a été mis en place. Cependant, le projet a été 
 
 ## 🌍 Déploiement  
 
-L’application est déployée sur **Vercel** et accessible ici : [https://KASA-blue.vercel.app/](https://KASA-blue.vercel.app/)  
+L’application est déployée sur **Vercel** et accessible ici : [https://kasa-immobilier.com/](https://kasa-immobilier.com/)  
 
 ## 📜 Licence  
 
