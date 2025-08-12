@@ -1,8 +1,8 @@
-# Kasa - Application de location immobilière  
+# KASA - Application de location immobilière  
 
-Kasa est une application web développée en **React** et **SASS**, dans le cadre d'un projet de formation chez OpenClassrooms. Il s'agit d'une refonte complète du site de Kasa, leader en location immobilière pour particuliers en France.  
+KASA est une application web développée en **React** et **SASS**, dans le cadre d'un projet de formation chez OpenClassrooms. Il s'agit d'une refonte complète du site de KASA, leader en location immobilière pour particuliers en France.  
 
-🚀 **Déployé sur Vercel** : [Accéder à l'application](https://kasa-blue.vercel.app/)  
+🚀 **Déployé sur Vercel** : [Accéder à l'application](https://KASA-blue.vercel.app/)  
 
 ## 🛠️ Technologies utilisées  
 
@@ -21,25 +21,25 @@ Kasa est une application web développée en **React** et **SASS**, dans le cadr
   - Qualité du logement en notation sur 5 étoiles  
   - Description détaillée et liste des équipements (via menus déroulants)  
   - Carrousel d'images pour visualiser les photos du logement  
-- **Page "À propos"** : Présente les valeurs de Kasa sous forme de menus déroulants.  
+- **Page "À propos"** : Présente les valeurs de KASA sous forme de menus déroulants.  
 - **Navigation** : Barre de navigation pour explorer le site.  
-- **Footer** : Contient quelques informations sur l'entreprise Kasa.  
+- **Footer** : Contient quelques informations sur l'entreprise KASA.  
 - **Page 404** : Gère les erreurs d'URL incorrectes avec un affichage dédié.  
 - **Design Responsive** : Adapté aux écrans mobiles, tablettes et ordinateurs.  
 
 ## 🚀 Installation et exécution  
 
 ### 📋 Prérequis  
-- **Node.js** v20.11.0  
+- **Node.js** v22.18.0  
 - **npm** installé  
 
 ### 🔧 Étapes d’installation  
 ```bash
 # 1. Cloner le dépôt
-git clone https://github.com/ton-repo/kasa.git
+git clone https://github.com/Rafikosaure/KASA.git
 
 # 2. Se rendre dans le dossier du projet
-cd kasa
+cd KASA
 
 # 3. Installer les dépendances
 npm install
@@ -56,7 +56,7 @@ Aucun test Jest ou Cypress n'a été mis en place. Cependant, le projet a été 
 
 ## 🌍 Déploiement  
 
-L’application est déployée sur **Vercel** et accessible ici : [https://kasa-blue.vercel.app/](https://kasa-blue.vercel.app/)  
+L’application est déployée sur **Vercel** et accessible ici : [https://KASA-blue.vercel.app/](https://KASA-blue.vercel.app/)  
 
 ## 📜 Licence  
 
