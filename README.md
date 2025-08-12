@@ -1,12 +1,63 @@
-# React + Vite
+# Kasa - Application de location immobilière  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Kasa est une application web développée en **React** et **SASS**, dans le cadre d'un projet de formation chez OpenClassrooms. Il s'agit d'une refonte complète du site de Kasa, leader en location immobilière pour particuliers en France.  
 
-Currently, two official plugins are available:
+🚀 **Déployé sur Vercel** : [Accéder à l'application](https://kasa-blue.vercel.app/)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Technologies utilisées  
 
-## Expanding the ESLint configuration
+- **React** (avec React Router)  
+- **SASS** pour le stylisme  
+- **Méthodologie Mobile First** pour un design entièrement responsive  
+- **Données stockées en local** (pas de backend ni d'API externe)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎨 Fonctionnalités  
+
+- **Page d’accueil** : Affiche la liste des logements disponibles avec leur nom et leur photographie.  
+- **Page logement** :  
+  - Nom du logement et localisation précise  
+  - Tags informatifs  
+  - Nom et image de profil du ou de la locataire  
+  - Qualité du logement en notation sur 5 étoiles  
+  - Description détaillée et liste des équipements (via menus déroulants)  
+  - Carrousel d'images pour visualiser les photos du logement  
+- **Page "À propos"** : Présente les valeurs de Kasa sous forme de menus déroulants.  
+- **Navigation** : Barre de navigation pour explorer le site.  
+- **Footer** : Contient quelques informations sur l'entreprise Kasa.  
+- **Page 404** : Gère les erreurs d'URL incorrectes avec un affichage dédié.  
+- **Design Responsive** : Adapté aux écrans mobiles, tablettes et ordinateurs.  
+
+## 🚀 Installation et exécution  
+
+### 📋 Prérequis  
+- **Node.js** v20.11.0  
+- **npm** installé  
+
+### 🔧 Étapes d’installation  
+```bash
+# 1. Cloner le dépôt
+git clone https://github.com/ton-repo/kasa.git
+
+# 2. Se rendre dans le dossier du projet
+cd kasa
+
+# 3. Installer les dépendances
+npm install
+
+# 4. Lancer l’application en local
+npm run dev
+```
+
+L'application sera disponible à l'adresse **http://localhost:5173/**.  
+
+## ✅ Tests et validation  
+
+Aucun test Jest ou Cypress n'a été mis en place. Cependant, le projet a été soumis à une batterie de tests unitaires manuels lors de la soutenance devant un jury pour vérifier le bon fonctionnement des composants et des fonctionnalités principales.  
+
+## 🌍 Déploiement  
+
+L’application est déployée sur **Vercel** et accessible ici : [https://kasa-blue.vercel.app/](https://kasa-blue.vercel.app/)  
+
+## 📜 Licence  
+
+Ce projet a été réalisé dans le cadre d’une mise en situation fictive pour OpenClassrooms et n’a pas vocation à être utilisé commercialement.  
