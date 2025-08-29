@@ -39,7 +39,7 @@ KASA est une application web développée en **React** et **SASS**, dans le cadr
 git clone https://github.com/Rafikosaure/KASA.git
 
 # 2. Se rendre dans le dossier du projet
-cd "KASA"
+cd KASA
 
 # 3. Installer les dépendances
 npm install
